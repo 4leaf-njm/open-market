@@ -1,7 +1,7 @@
 // Action 정의
 const SAMPLE_REDUX = "SAMPLE_REDUX";
 
-// Action Creator 작성
+// Action Creator 정의
 const sampleRedux = () => {
   return {
     type: SAMPLE_REDUX
