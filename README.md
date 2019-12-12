@@ -2,12 +2,11 @@
 
 ## 주제
 
-Open market project
+- This Project topic is Open market App
 
 ## 팀 멤버
 
-- 팀장
-  - 노재민
+- 팀장: 노재민
 - 팀원
   - OOO
   - OOO
