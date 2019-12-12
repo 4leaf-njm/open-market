@@ -30,11 +30,11 @@ const applySampleRedux = state => {
   };
 };
 
-// Export Action Creator
 const actionCreator = {
   sampleRedux
 };
 
+// Export Action Creator
 export { actionCreator };
 
 // Export Reducer
