@@ -11,19 +11,13 @@ const TabNavigation = createBottomTabNavigator(
     FirstScreen: {
       screen: Home,
       navigationOptions: {
-        title: "홈",
-        tabBarIcon: ({ tintColor }) => (
-          <FontAwesome name="home" size={30} color="#333" />
-        )
+        title: "홈"
       }
     },
     SecondScreen: {
       screen: Cart,
       navigationOptions: {
-        title: "장바구니",
-        tabBarIcon: ({ tintColor }) => (
-          <FontAwesome name="shopping-cart" size={30} color="#333" />
-        )
+        title: "장바구니"
       }
     }
   },

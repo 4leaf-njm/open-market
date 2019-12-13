@@ -10,7 +10,7 @@ const sampleRedux = () => {
 
 // 데이터 정의
 const initialState = {
-  data: 0
+  isLogin: false
 };
 
 // Action에 해당하는 Reducer 명령 호출

@@ -1,12 +1,12 @@
 // 홈 화면
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-import styled from "styled-components";
+import Header from "../components/Header";
 
 const Home = () => {
   return (
     <View style={styles.container}>
-      <Text>홈</Text>
+      <Header />
     </View>
   );
 };
@@ -14,7 +14,7 @@ const Home = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
+    alignItems: "flex-start",
     justifyContent: "center"
   }
 });
