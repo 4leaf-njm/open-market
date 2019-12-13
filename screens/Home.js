@@ -1,12 +1,20 @@
 // 홈 화면
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, ScrollView } from "react-native";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Banner from "../components/Banner";
+import ProductList from "../components/ProductList";
 
 const Home = () => {
   return (
     <View style={styles.container}>
       <Header />
+      <ScrollView>
+        <Banner />
+        <ProductList />
+        <Footer />
+      </ScrollView>
     </View>
   );
 };

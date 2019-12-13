@@ -28,7 +28,7 @@ class Header extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 0.1,
     justifyContent: "center",
     alignItems: "center"
   },
