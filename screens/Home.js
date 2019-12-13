@@ -4,7 +4,11 @@ import { View, Text, StyleSheet } from "react-native";
 import styled from "styled-components";
 
 const Home = () => {
-  return <View style={styles.container}></View>;
+  return (
+    <View style={styles.container}>
+      <Text>홈</Text>
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
