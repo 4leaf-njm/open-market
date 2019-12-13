@@ -9,7 +9,7 @@ import {
 
 const { width } = Dimensions.get("window");
 
-class CommonButton extends React.Component {
+class CommonButton02 extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -24,16 +24,18 @@ class CommonButton extends React.Component {
 
 const styles = StyleSheet.create({
   btn: {
-    backgroundColor: "#ed1c24",
-    width: width / 1.1,
+    backgroundColor: "white",
+    borderColor: "red",
+    borderWidth: 1,
+    width: width / 1.4,
     alignItems: "center",
-    paddingVertical: 18
+    paddingVertical: 16
   },
   btn_text: {
     fontSize: 24,
-    color: "white",
-    fontWeight: "600"
+    color: "red",
+    fontWeight: "400"
   }
 });
 
-export default CommonButton;
+export default CommonButton02;

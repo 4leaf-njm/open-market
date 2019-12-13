@@ -1,6 +1,6 @@
 import React from "react";
-import { View, Text, StyleSheet, Dimensions } from "react-native";
-import { publicColors } from "../assets/colors";
+import { StyleSheet, Dimensions, TextInput } from "react-native";
+import { publicColors } from "../../assets/colors/colors";
 
 const { width } = Dimensions.get("window");
 
@@ -22,12 +22,16 @@ class CommonInput extends React.Component {
 
 const styles = StyleSheet.create({
   input: {
-    width: width / 1.3,
-    height: 50,
-    borderColor: publicColors.GEY_COLOR,
+    width: width / 1.1,
+    height: 40,
+    borderColor: "white",
+    borderBottomColor: "#dddddd",
     borderWidth: 1,
-    marginBottom: 10,
-    paddingLeft: 10
+    marginVertical: 5,
+    paddingLeft: 10,
+    paddingVertical: 8,
+    fontSize: 22,
+    color: "#666666"
   }
 });
 

@@ -1,8 +1,3 @@
-import CommonInput from "./CommonInputPresenter";
-import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
-import { actionCreator as tomatoActions } from "../../reducer/reducer";
-
 mapStateProps = state => {
   const {} = state;
 
@@ -13,4 +8,4 @@ mapDispatchToProps = dispatch => {
   return {};
 };
 
-export default connect(mapStateProps, mapDispatchToProps)(CommonInput);
+export default connect(mapStateProps, mapDispatchToProps);

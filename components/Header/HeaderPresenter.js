@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
+import CommonInput from "../CommonInput/CommonInputPresenter";
 
 class Header extends React.Component {
   render() {
@@ -8,13 +9,5 @@ class Header extends React.Component {
     return <View style={styles.container}></View>;
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center"
-  }
-});
 
 export default Header;
