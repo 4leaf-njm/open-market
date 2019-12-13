@@ -7,7 +7,7 @@ import CommonButton from "../components/CommonButton";
 import CommonButton02 from "../components/CommonButton02";
 import CommonInput from "../components/CommonInput/CommonInputPresenter";
 
-const Login = () => {
+const Login = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.login_input}>
@@ -20,7 +20,7 @@ const Login = () => {
         <CommonButton text="로그인" />
       </View>
       <View View style={styles.sign}>
-        <CommonButton02 text="회원가입" />
+        <CommonButton02 text="회원가입" nav={navigation} join={true} />
       </View>
     </View>
   );
