@@ -1,37 +1,38 @@
 // Action 정의
-const SAMPLE_REDUX = "SAMPLE_REDUX";
+const LOGIN_CHECK = "LOGIN_CHECK";
 
 // Action Creator 정의
-const sampleRedux = () => {
+const loginCheck = () => {
   return {
-    type: SAMPLE_REDUX
+    type: LOGIN_CHECK
   };
 };
 
 // 데이터 정의
 const initialState = {
-  data: 0
+  isLogin: false,
+  loginUser: null
 };
 
 // Action에 해당하는 Reducer 명령 호출
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case SAMPLE_REDUX:
-      return applySampleRedux(state);
+    case LOGIN_CHECK:
+      return applyLoginCheck(state);
     default:
       return state;
   }
 };
 
 // Reducer 명령 작성
-const applySampleRedux = state => {
+const applyLoginCheck = state => {
   return {
     ...state
   };
 };
 
 const actionCreator = {
-  sampleRedux
+  loginCheck
 };
 
 // Export Action Creator
