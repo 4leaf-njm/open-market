@@ -16,7 +16,7 @@ const Logo = styled.Image`
 
 class Header extends React.Component {
   render() {
-    const { isLogin } = this.props;
+    const { isLogin, loginCheck, navigation } = this.props;
     console.log(isLogin);
 
     return (
@@ -32,7 +32,13 @@ class Header extends React.Component {
           </TouchableOpacity>
         </View>
         <View style={styles.right_area}>
-          <TouchableOpacity onPress={handleCartPress}>
+          <TouchableOpacity
+            onPress={() =>
+              isLogin
+                ? alert("Hi")
+                : navigation.navigate({ routeName: "Login" })
+            }
+          >
             <AntDesign
               name="shoppingcart"
               size={45}

@@ -2,8 +2,10 @@ import React from "react";
 import { View, Text, StyleSheet, Dimensions } from "react-native";
 import styled from "styled-components";
 
+const { width } = Dimensions.get("window");
+
 const FooterBold = styled.Text`
-  font-size: 22px;
+  font-size: ${width / 22};
   color: #4a69bd;
   margin-left: 10px;
   margin-bottom: 5px;
@@ -11,12 +13,10 @@ const FooterBold = styled.Text`
 `;
 
 const FooterNormal = styled.Text`
-  font-size: 18px;
+  font-size: ${width / 32};
   color: #4a69bd;
   margin-left: 10px;
 `;
-
-const { width } = Dimensions.get("window");
 
 class Footer extends React.Component {
   render() {

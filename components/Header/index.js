@@ -3,16 +3,14 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { actionCreator as tomatoActions } from "../../reducer";
 
-mapStateProps = state => {
+mapStateProps = (state, { navigation }) => {
   const { isLogin } = state;
 
-  return { isLogin };
+  return { isLogin, navigation };
 };
 
 mapDispatchToProps = dispatch => {
-  return {
-    loginCheck: bindActionCreators(tomatoActions.loginCheck, dispatch)
-  };
+  return {};
 };
 
 export default connect(mapStateProps, mapDispatchToProps)(Header);
