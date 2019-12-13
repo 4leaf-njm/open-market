@@ -58,5 +58,6 @@
 - npm install react-native-screens
 - npm install react-navigation-stack
 - npm install redux react-redux
+- npm install styled-components
 - npm install prop-types
 - npm install @expo/vector-icons

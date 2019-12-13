@@ -1,19 +1,33 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Dimensions } from "react-native";
+import { publicColors } from "../assets/colors";
+
+const { width } = Dimensions.get("window");
 
 class CommonInput extends React.Component {
-  render() {
-    const {} = this.props;
+  constructor(props) {
+    super(props);
+  }
 
-    return <View style={styles.container}></View>;
+  render() {
+    return (
+      <TextInput
+        style={styles.input}
+        placeholder={this.props.placeholder}
+        secureTextEntry={this.props.secureText}
+      />
+    );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center"
+  input: {
+    width: width / 1.3,
+    height: 50,
+    borderColor: publicColors.GEY_COLOR,
+    borderWidth: 1,
+    marginBottom: 10,
+    paddingLeft: 10
   }
 });
 
