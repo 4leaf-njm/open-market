@@ -6,21 +6,24 @@ import {
   TouchableOpacity,
   Dimensions
 } from "react-native";
+import { withNavigation } from "react-navigation";
 
 const { width } = Dimensions.get("window");
 
-class CommonButton02 extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
-      <TouchableOpacity style={styles.btn}>
-        <Text style={styles.btn_text}>{this.props.text}</Text>
-      </TouchableOpacity>
-    );
-  }
-}
+const CommonButton02 = ({ text, nav, join }) => {
+  return (
+    <TouchableOpacity
+      style={styles.btn}
+      onPress={
+        join
+          ? () => nav.navigate({ routeName: "Join" })
+          : () => alert("아직 개발 안했슈...")
+      }
+    >
+      <Text style={styles.btn_text}>{text}</Text>
+    </TouchableOpacity>
+  );
+};
 
 const styles = StyleSheet.create({
   btn: {
