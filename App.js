@@ -1,8 +1,10 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-export default function App() {
-  return <View style={styles.container}></View>;
+class App extends React.Component {
+  render() {
+    return <View style={styles.container}></View>;
+  }
 }
 
 const styles = StyleSheet.create({
@@ -12,3 +14,5 @@ const styles = StyleSheet.create({
     justifyContent: "center"
   }
 });
+
+export default App;
