@@ -1,19 +1,38 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  Dimensions
+} from "react-native";
+
+const { width } = Dimensions.get("window");
 
 class CommonButton extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
-    const {} = this.props;
-
-    return <View style={styles.container}></View>;
+    return (
+      <TouchableOpacity style={styles.btn}>
+        <Text style={styles.btn_text}>{this.props.text}</Text>
+      </TouchableOpacity>
+    );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center"
+  btn: {
+    backgroundColor: "#ed1c24",
+    width: width / 1.1,
+    alignItems: "center",
+    paddingVertical: 18
+  },
+  btn_text: {
+    fontSize: 24,
+    color: "white",
+    fontWeight: "600"
   }
 });
 

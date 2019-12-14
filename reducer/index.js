@@ -1,3 +1,6 @@
+// import
+import { NavigationActions } from "react-navigation";
+
 // Action 정의
 const LOGIN_CHECK = "LOGIN_CHECK";
 
@@ -26,6 +29,11 @@ const reducer = (state = initialState, action) => {
 
 // Reducer 명령 작성
 const applyLoginCheck = state => {
+  if (!state.isLogin) {
+  } else {
+    alert("Welcome My App!");
+  }
+
   return {
     ...state
   };

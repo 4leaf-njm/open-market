@@ -3,6 +3,7 @@ import { createAppContainer } from "react-navigation";
 import { createBottomTabNavigator } from "react-navigation-tabs";
 import Home from "../screens/Home";
 import Cart from "../screens/Cart";
+import Login from "../screens/Login";
 import { FontAwesome } from "@expo/vector-icons";
 import { publicColors } from "../assets/colors/colors";
 
