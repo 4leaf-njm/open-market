@@ -17,11 +17,8 @@ const Home = ({ navigation }) => {
         <ScrollView>
           <Banner />
           <ProductList />
+          <Footer />
         </ScrollView>
-      </View>
-
-      <View style={styles.footer}>
-        <Footer />
       </View>
     </>
   );
